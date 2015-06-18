@@ -57,7 +57,6 @@ public class Server extends GlobalActivity {
           Channel channel = session.openChannel("shell");
           output = (TextView) findViewById(R.id.output);
           input = (EditText) findViewById(R.id.input);
-          inputStream = new BufferedInputStream();
 
           OutputStream os = new OutputStream() {
             @Override
